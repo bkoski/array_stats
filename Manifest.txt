@@ -1,0 +1,11 @@
+History.txt
+Manifest.txt
+PostInstall.txt
+README.rdoc
+Rakefile
+lib/array_stats.rb
+script/console
+script/destroy
+script/generate
+test/test_array_stats.rb
+test/test_helper.rb
