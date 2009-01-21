@@ -4,6 +4,8 @@ PostInstall.txt
 README.rdoc
 Rakefile
 lib/array_stats.rb
+lib/array_stats/array_stats.rb
+lib/array_stats/array.rb
 script/console
 script/destroy
 script/generate
