@@ -11,9 +11,9 @@ $hoe = Hoe.new('array_stats', ArrayStats::VERSION) do |p|
   # p.extra_deps         = [
   #   ['activesupport','>= 2.0.2'],
   # ]
-  p.extra_dev_deps = [
-    ['newgem', ">= #{::Newgem::VERSION}"]
-  ]
+  # p.extra_dev_deps = [
+  #   ['newgem', ">= #{::Newgem::VERSION}"]
+  # ]
   
   p.clean_globs |= %w[**/.DS_Store tmp *.log]
   path = (p.rubyforge_name == p.name) ? p.rubyforge_name : "\#{p.rubyforge_name}/\#{p.name}"
