@@ -6,8 +6,10 @@ Rakefile
 lib/array_stats.rb
 lib/array_stats/array_stats.rb
 lib/array_stats/array.rb
+lib/array_stats/float.rb
 script/console
 script/destroy
 script/generate
 test/test_array_stats.rb
+test/test_float_extensions.rb
 test/test_helper.rb
