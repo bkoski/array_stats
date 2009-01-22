@@ -36,7 +36,7 @@ Percentile calculations are based on the NIST formula[http://www.itl.nist.gov/di
    
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+* hoe
 
 == INSTALL:
 
