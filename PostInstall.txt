@@ -1,7 +1,1 @@
-
-For more information on array_stats, see http://array_stats.rubyforge.org
-
-NOTE: Change this information in PostInstall.txt 
-You can also delete it if you don't want it.
-
-
+For more information on array_stats, see http://github.com/bkoski/array_stats

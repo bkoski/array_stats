@@ -1,32 +1,51 @@
 = array_stats
 
-* FIX (url)
+* http://github.com/bkoski/array_stats
 
 == DESCRIPTION:
 
-Basic statistics on Ruby Arrays.
-
-== FEATURES/PROBLEMS:
-
-* FIX (list of features or problems)
+Simple statistics for ruby arrays -- mean, median, sum, and percentile.  For more complex
+applications, you should consider NArray[http://narray.rubyforge.org/].
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+Adds convenient methods to grab stats from a Ruby array, including:
+* mean
+* median
+* sum
+* percentile
 
+Percentile calculations are based on the NIST formula[http://www.itl.nist.gov/div898/handbook/prc/section2/prc252.htm] for percentiles.
+
+== EXAMPLE:
+
+  require 'array_stats'
+  
+  puts [1,3,5,7].mean
+  > 4
+  
+  puts [1,2,3,4].sum
+  > 10
+  
+  puts [1,2,3,4,5].median
+  > 3
+  
+  puts [1,2,3,4,5].percentile(50)
+  > 3
+   
 == REQUIREMENTS:
 
 * FIX (list of requirements)
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+* <tt>sudo gem install bkoski-array_stats --source http://gems.github.com</tt>
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2009 FIXME full name
+Copyright (c) 2009 Ben Koski
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
