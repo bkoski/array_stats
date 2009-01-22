@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = ["History.txt", "Manifest.txt", "PostInstall.txt", "README.rdoc"]
   s.files = ["History.txt", "Manifest.txt", "PostInstall.txt", "README.rdoc", "Rakefile", "lib/array_stats.rb", "lib/array_stats/array_stats.rb", "lib/array_stats/array.rb", "lib/array_stats/float.rb", "script/console", "script/destroy", "script/generate", "test/test_array_stats.rb", "test/test_float_extensions.rb", "test/test_helper.rb"]
   s.has_rdoc = true
-  s.homepage = %q{http://github.com/bkoski/array_stats}
+  s.homepage = %q{http://benkoski.com/array_stats/}
   s.post_install_message = %q{PostInstall.txt}
   s.rdoc_options = ["--main", "README.rdoc"]
   s.require_paths = ["lib"]
