@@ -1,1 +1,0 @@
-For more information on array_stats, see http://github.com/bkoski/array_stats
