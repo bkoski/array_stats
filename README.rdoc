@@ -13,7 +13,7 @@ applications, you should consider NArray[http://narray.rubyforge.org/].
 Adds convenient methods to grab stats from a Ruby array, including:
 * mean
 * median
-* sum
+* sum (named total_sum to avoid ActiveRecord conflicts)
 * percentile
 
 Percentile calculations are based on the NIST formula[http://www.itl.nist.gov/div898/handbook/prc/section2/prc252.htm] for percentiles.
@@ -25,7 +25,7 @@ Percentile calculations are based on the NIST formula[http://www.itl.nist.gov/di
   puts [1,3,5,7].mean
   > 4
   
-  puts [1,2,3,4].sum
+  puts [1,2,3,4].total_sum
   > 10
   
   puts [1,2,3,4,5].median
@@ -34,13 +34,9 @@ Percentile calculations are based on the NIST formula[http://www.itl.nist.gov/di
   puts [1,2,3,4,5].percentile(50)
   > 3
    
-== REQUIREMENTS:
-
-* hoe
-
 == INSTALL:
 
-* <tt>sudo gem install bkoski-array_stats --source http://gems.github.com</tt>
+* <tt>sudo gem install bkoski-array_stats --source http://gemcutter.org</tt>
 
 == LICENSE:
 

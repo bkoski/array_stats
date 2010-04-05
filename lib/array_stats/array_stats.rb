@@ -1,7 +1,7 @@
 module ArrayStats
   
   # Returns the sum of all elements in the array; 0 if array is empty
-  def sum
+  def total_sum
     self.inject(0) {|sum, sample| sum += sample}
   end
   
@@ -10,7 +10,7 @@ module ArrayStats
     if self.length == 0
       nil
     else
-      self.sum / self.length
+      self.total_sum / self.length
     end
   end
 

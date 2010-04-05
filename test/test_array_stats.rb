@@ -35,21 +35,21 @@ class TestArrayStats < Test::Unit::TestCase
     end
   end
   
-  context "sum" do
+  context "total_sum" do
     should "return the sum of all elements in the array" do
-      assert_equal 12, [2,4,6].sum
+      assert_equal 12, [2,4,6].total_sum
     end
     
     should "return an integer if all elements are ints" do
-      assert_kind_of Integer, [2,4,6].sum
+      assert_kind_of Integer, [2,4,6].total_sum
     end
     
     should "return a float if at least some of the elements are floats" do
-      assert_kind_of Float, [2.5,3.5,6].sum
+      assert_kind_of Float, [2.5,3.5,6].total_sum
     end
     
     should "return 0 if the array is empty" do
-      assert_equal 0, [].sum
+      assert_equal 0, [].total_sum
     end
   end
   
