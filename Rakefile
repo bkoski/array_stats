@@ -4,7 +4,7 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "aws_credentials"
+    gem.name = "array_stats"
     gem.summary = %Q{Easy mean, median, percentile, and sum statistics for Ruby Arrays}
     gem.description = %Q{Easy mean, median, percentile, and sum statistics for Ruby Arrays}
     gem.email = "gems@benkoski.com"
