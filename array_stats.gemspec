@@ -20,7 +20,6 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "array_stats.gemspec",
-     "aws_credentials.gemspec",
      "lib/array_stats.rb",
      "lib/array_stats/array.rb",
      "lib/array_stats/array_stats.rb",
