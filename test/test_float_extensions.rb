@@ -20,12 +20,12 @@ class TestFloatExtensions < Test::Unit::TestCase
       assert_in_delta 0.2456, n.fractional_part, 0.00000001
     end
     
-    should "retrun the decimal parts, even if they are 0" do
+    should "return the decimal parts, even if they are 0" do
       n = 12.0
       assert_equal 0.0, n.fractional_part
     end
     
-    should "retrun the decimal as a positive number, even if the original float is negative" do
+    should "return the decimal as a positive number, even if the original float is negative" do
       n = -12.2399
       assert_in_delta 0.2399, n.fractional_part, 0.00000001
     end

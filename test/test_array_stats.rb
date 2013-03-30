@@ -54,7 +54,7 @@ class TestArrayStats < Test::Unit::TestCase
   end
   
   context "mean" do
-    should "return the mean for the array " do
+    should "return the mean for the array" do
       assert_equal 7, [2,4,6,8,10,12].mean
       assert_equal 25, [48,29,26,19,3].mean
     end
