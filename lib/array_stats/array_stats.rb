@@ -36,9 +36,9 @@ module ArrayStats
 
       (rank.fractional_part * (sample_1 - sample_0)) + sample_0
     elsif rank.truncate == 0
-      self.first.to_f
+      sorted_array.first.to_f
     elsif rank.truncate == self.length
-      self.last.to_f
+      sorted_array.last.to_f
     end
   end
 
