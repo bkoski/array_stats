@@ -38,6 +38,7 @@ Gem::Specification.new do |s|
      "test/test_float_extensions.rb",
      "test/test_helper.rb"
   ]
+  s.extensions    = ["ext/array_stats/extconf.rb"]
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
