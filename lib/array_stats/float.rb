@@ -7,7 +7,7 @@ class Float
   
   # Returns the fractional part of a float. For example, <tt>(6.67).fractional_part == 0.67</tt>
   def fractional_part
-    (self - self.truncate).abs
+    self - self.truncate
   end
   
 end

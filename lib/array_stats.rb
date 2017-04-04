@@ -9,3 +9,10 @@ require "#{File.dirname(__FILE__)}/array_stats/float"
 require "#{File.dirname(__FILE__)}/array_stats/array_stats"
 require "#{File.dirname(__FILE__)}/array_stats/array"
 
+require 'ffi'
+
+module GoPercentile
+  extend FFI::Library
+  ffi_lib "#{File.dirname(__FILE__)}/array_stats/percentile.so"
+  attach_function :percentile, [:array, :int], :float
+end
