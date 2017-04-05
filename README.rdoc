@@ -22,7 +22,6 @@ Benchmark results:
     0.090000   0.010000   0.100000 (  0.098708)
     0.090000   0.040000   0.130000 (  0.129007)
 
-terminal screenshot with benchmark results:
-![benchmark](Benchmarks.png)
+terminal screenshot with benchmark results is Benchmarks.png file
 
 Job is still in progress
