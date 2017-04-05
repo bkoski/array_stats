@@ -54,11 +54,12 @@ module ArrayStats
     10_000_000.times do
       arr.push(rand(1..100))
     end
-    puts arr.size
+    puts 'Ruby implementation of percentile algorithm benchmarks:'
     puts Benchmark.measure { arr.percentile(10) }
     puts Benchmark.measure { arr.percentile(50) }
     puts Benchmark.measure { arr.percentile(90) }
-    puts "--------------------------------------"
+    puts "---------------------------------------------------------"
+    puts 'Go implementation of percentile algorithm benchmarks:'
     puts Benchmark.measure { arr.go_percentile(10) }
     puts Benchmark.measure { arr.go_percentile(50) }
     puts Benchmark.measure { arr.go_percentile(90) }

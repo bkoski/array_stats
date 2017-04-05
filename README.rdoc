@@ -1,4 +1,4 @@
-= Refactored version of * bkoski/stats [http://github.com/bkoski/array_stats]
+= Refactored version of bkoski/stats[http://github.com/bkoski/array_stats]
 
 = Improvements:
 
@@ -9,5 +9,20 @@ For correct operation of the application you should build shared object (.so fil
 <tt>go build -buildmode=c-shared -o percentile.so percentile.go</tt>
 
 For some versionsof mac os you should use key <tt>-ldflags -s</tt>
+
+Benchmark results:
+---
+  Ruby implementation of percentile algorithm benchmarks:
+    0.790000   0.080000   0.870000 (  0.845818)
+    0.820000   0.040000   0.860000 (  0.863498)
+    0.780000   0.060000   0.840000 (  0.870717)
+  ---------------------------------------------------------
+  Go implementation of percentile algorithm benchmarks:
+    0.130000   0.010000   0.140000 (  0.138285)
+    0.090000   0.010000   0.100000 (  0.098708)
+    0.090000   0.040000   0.130000 (  0.129007)
+
+terminal screenshot with benchmark results:
+![benchmark](Benchmarks.png)
 
 Job is still in progress
