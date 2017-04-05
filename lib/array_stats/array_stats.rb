@@ -1,4 +1,5 @@
 module ArrayStats
+  require 'benchmark'
 
   # Returns the sum of all elements in the array; 0 if array is empty
   def total_sum
@@ -34,6 +35,33 @@ module ArrayStats
     else
       return (sorted_array[rank - 1] + sorted_array[rank]) / 2.0
     end
+  end
+
+  def go_percentile p
+    arr = self
+    ptr = FFI::MemoryPointer.new :long_long, arr.size
+    ptr.write_array_of_long_long  arr
+    slice = GoPercentile::GoSlice.new
+    slice[:data] = ptr
+    slice[:len] = arr.size
+    slice[:cap] = arr.size
+    result = GoPercentile.percentile(slice, p)
+    return result
+  end
+
+  def bench_percentile
+    arr = []
+    10_000_000.times do
+      arr.push(rand(1..100))
+    end
+    puts arr.size
+    puts Benchmark.measure { arr.percentile(10) }
+    puts Benchmark.measure { arr.percentile(50) }
+    puts Benchmark.measure { arr.percentile(90) }
+    puts "--------------------------------------"
+    puts Benchmark.measure { arr.go_percentile(10) }
+    puts Benchmark.measure { arr.go_percentile(50) }
+    puts Benchmark.measure { arr.go_percentile(90) }
   end
 
 end
